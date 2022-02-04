@@ -4,14 +4,18 @@ pipeline {
   stages {
     stage('Hello') {
       steps {
-        sh 'echo Helo'
+        sh 'echo Hello'
         sh 'echo Bye'
-        print 'Hello'
+        print 'Helloo'
         script {
-          println "Hello World"
-        }
+          println  'Hello world'
+          }
       }
     }
-
+  }
+  post {
+    always {
+      println 'post step'
+    }
   }
 }
