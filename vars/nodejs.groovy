@@ -6,7 +6,7 @@ def call(String COMPONENT) {
 
       stage('compile') {
         steps {
-          sh 'echo COMPONENT  = '${COMPONENT}
+          sh "echo COMPONENT  = '${COMPONENT}"
         }
       }
 
