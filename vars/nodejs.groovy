@@ -10,6 +10,7 @@ def call(String COMPONENT) {
         }
       }
 
+
 //      stage('code quality') {
 //        steps {
 //          sh 'echo compile'
